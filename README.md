@@ -79,6 +79,12 @@ To integrate this repository into your existing project as a submodule, follow t
 
 This allows you to use the LaTeX classes provided in the course template repository directly within your project.
 
+- If you do not add the `handout` option to the style, it will build the “slides” version. This is Recommended. If you have `foo.tex` that generates slides, you can create a one-line file `handout-foo.tex` with
+  ```latex
+  \PassOptionsToClass{handout}{beamer}\input{foo}
+  ```
+  to generate the handout version without editing `foo.tex`.
+
 
 ## Customization
 
